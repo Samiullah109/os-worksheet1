@@ -1,3 +1,11 @@
+%ifdef ELF_TYPE
+%define _scanf   scanf
+%define _printf  printf
+%define _getchar getchar
+%define _putchar putchar
+%endif
+
+extern  int_format, string_format, reg_format, mem_format1, mem_format2, mem_format3, stack_format
 ; asm_io.inc - externs and macros for asm_io routines
 ; extracted from provided asm_io.asm
 

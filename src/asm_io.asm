@@ -50,6 +50,7 @@
 
 %ifdef OBJ_TYPE
 segment .data public align=4 class=data use32
+global int_format, string_format, reg_format, mem_format1, mem_format2, mem_format3, stack_format, stack_line_format
 global int_format, string_format, reg_format, mem_format1, mem_format2, mem_format3, stack_format
 %else
 segment .data
